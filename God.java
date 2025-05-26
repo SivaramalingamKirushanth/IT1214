@@ -1,32 +1,21 @@
-public class God {
-    private static God godInstance=null;
-
-    private God() {
-        // Private constructor to prevent instantiation
+public class God{
+    private static God goodGod;
+    private God(){
+        System.out.println("Constructor: Creating Good GOD");
     }
-
-    public static God getInstance() {
-
-        if (godInstance == null) {
-            godInstance = new God();
+    public static God getGod(){
+        if(goodGod==null){
+            System.out.println("GetGod():Created Good GOD");
+            goodGod=new God();
+             
         }
-        return godInstance;
+         System.out.println("GetGod(): Returning God");
+        return goodGod;
     }
 
-    public void displayMessage() {
-        System.out.println("Hello from Singleton God!");
-    }
-
-    // Main method to test the Singleton pattern
-    public static void main(String[] args) {
-        God god1 = God.getInstance();
-        God god2 = God.getInstance();
-
-        // Both references should point to the same instance
-        System.out.println("Are both instances equal? " + (god1 == god2));
-
-        // Call a method on the singleton instance
-        god1.displayMessage();
+    public static void main(String[] ar){
+        God allah=God.getGod();
+        God jesus=God.getGod();
+        God saraswathi=God.getGod();
     }
 }
-
