@@ -1,0 +1,18 @@
+public class Database{
+    ArrayList<Customer> customers=new ArrayList<>();
+    ArrayList<Item> items=new ArrayList<>();
+
+
+    static void printMenue(){
+        System.out.println("------ Inventory Management ------");
+        System.out.println("1. Add Item");
+        System.out.println("2. Remove Item");
+        System.out.println("3. Update Item Quantity");
+        System.out.println("4. List all items");
+        System.out.println("5. Add Customer");
+        System.out.println("6. List all Customers");
+        System.out.println("7. Search Item by Name");
+        System.out.println("0. Exit");
+        System.out.println("Choose an Option");   
+    }
+}
