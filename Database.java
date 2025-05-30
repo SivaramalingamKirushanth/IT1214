@@ -25,5 +25,5 @@ public class Database{
             option=sc.nextInt();
         }while(option!=0);
 
-    }
+    }rhyruyu
 }
