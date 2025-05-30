@@ -4,7 +4,6 @@ public class Database{
   //  ArrayList<Item> items=new ArrayList<>();
   //Change made by 62
 
-
     static void printMenue(){
         System.out.println("------ Inventory Management ------");
         System.out.println("1. Add Item");
@@ -20,7 +19,7 @@ public class Database{
 
     public static select(int choice){
         Switch(choice){
-            
+
 
         }
     }
