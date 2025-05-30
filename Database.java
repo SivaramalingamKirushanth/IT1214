@@ -19,18 +19,7 @@ public class Database{
 
     public static select(int choice){
         Switch(choice){
-
-
-        }
-    }
-
-    public static void main(String [] arg){
-        Scanner sc=new Scanner(System.in);
-        int option;
-        do{
-            printMenue();
-            option=sc.nextInt();
-      			switch(option){
+            switch(option){
       				case 1:
       					System.out.print("Please enter Item Name           :");
       					String name = scan.nextLine();
@@ -78,6 +67,17 @@ public class Database{
       					system = 0;
       					break;
       			}
+
+        }
+    }
+
+    public static void main(String [] arg){
+        Scanner sc=new Scanner(System.in);
+        int option;
+        do{
+            printMenue();
+            option=sc.nextInt();
+      		select(option);
         }while(option!=0);
 
     }
