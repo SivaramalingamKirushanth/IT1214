@@ -18,6 +18,13 @@ public class Database{
         System.out.println("Choose an Option");   
     }
 
+    public static select(int choice){
+        Switch(choice){
+            
+
+        }
+    }
+
     public static void main(String [] arg){
         Scanner sc=new Scanner(System.in);
         int option;
