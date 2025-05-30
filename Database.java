@@ -75,7 +75,7 @@ public class Database{
         System.out.println("---------------------------------");
        
         for(Item item : items){
-            System.out.printf("%-20s %-30s $%-9.2f %-10d%n", item.getName(), item.getDescription(), item.getUnitPrice(), item.getQuantity());            
+            System.out.printf("%-20s %-30s Rs. %-9.2f %-10d%n", item.getName(), item.getDescription(), item.getUnitPrice(), item.getQuantity());            
         }
     }
 
