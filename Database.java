@@ -1,6 +1,7 @@
+import java.util.*;
 public class Database{
-    ArrayList<Customer> customers=new ArrayList<>();
-    ArrayList<Item> items=new ArrayList<>();
+  //  ArrayList<Customer> customers=new ArrayList<>();
+  //  ArrayList<Item> items=new ArrayList<>();
 
 
     static void printMenue(){
@@ -14,5 +15,15 @@ public class Database{
         System.out.println("7. Search Item by Name");
         System.out.println("0. Exit");
         System.out.println("Choose an Option");   
+    }
+
+    public static void main(String [] arg){
+        Scanner sc=new Scanner(System.in);
+        int option;
+        do{
+            printMenue();
+            option=sc.nextInt();
+        }while(option!=0);
+
     }
 }
