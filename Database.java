@@ -2,7 +2,7 @@ import java.util.*;
 public class Database{
   //  ArrayList<Customer> customers=new ArrayList<>();
   //  ArrayList<Item> items=new ArrayList<>();
-  //Change made by 62
+  
 
     static void printMenue(){
         System.out.println("------ Inventory Management ------");
@@ -80,5 +80,5 @@ public class Database{
       			}
         }while(option!=0);
 
-    }rhyruyu
+    }
 }
