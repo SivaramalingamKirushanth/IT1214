@@ -1,16 +1,16 @@
 public class God{
-    private static God goodGod;
+    private static God godName;
     private God(){
-        System.out.println("Constructor: Creating Good GOD");
+        System.out.println("Constructor: Creating GOD");
     }
     public static God getGod(){
-        if(goodGod==null){
-            System.out.println("GetGod():Created Good GOD");
-            goodGod=new God();
+        if(godName==null){
+            System.out.println("GetGod():Created GOD");
+            godName=new God();
              
         }
          System.out.println("GetGod(): Returning God");
-        return goodGod;
+        return godName;
     }
 
     public static void main(String[] ar){
